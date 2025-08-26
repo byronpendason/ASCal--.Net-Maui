@@ -17,7 +17,13 @@
                 HorizontalTextAlignment="Center" />
             <Label
                 Text=" "
-                FontSize="24"
+                FontSize="20"
+                HorizontalTextAlignment="Center" />
+            <Image
+                Source="The_Venerable_Bede_translates_John_1902.jpg" />
+            <Label
+                Text=" "
+                FontSize="20"
                 HorizontalTextAlignment="Center" />
             <Label
                 x:Name="nextMonthLbl"
