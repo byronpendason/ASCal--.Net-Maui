@@ -29,15 +29,19 @@ namespace ASCal
                     break;
                 }
             }
-            if (i == cal.Months.Count - 1)
+            /*if (i == cal.Months.Count - 1)
             {
                 month = cal.Months[cal.Months.Count - 1];
             }
+            else*/
+            if (i >= cal.Months.Count)
+            {
+                nextMonthLbl.Text += $"Ærra Ġeola, which begins on {month.NextNewMoon}.";
+            }
             else
             {
-                month = cal.Months[i - 1];
+                nextMonthLbl.Text += $"{month.Name}, which begins on {month.NewMoon}.";
             }
-            nextMonthLbl.Text += $"{month.Name}, which begins on {month.NewMoon}.";
 
             i = 0;
             Calendar.Holiday holiday = cal.Holidays[i];
