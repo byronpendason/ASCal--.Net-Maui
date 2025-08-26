@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    
+    xmlns:local="clr-namespace:ASCal"
+    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ASCal.DatesPage">
+    <ScrollView>
+        <StackLayout>
+            <Label
+                x:Name="title"
+                Text="Months for "
+                FontSize="24"
+                Height="48"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center" />
+            <Grid
+                x:Name="table1"
+                ColumnDefinitions="* ,Auto, Auto, Auto"
+                ColumnSpacing="12"
+                RowSpacing="12"
+                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                <Label
+                    Text="Name"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="0" />
+                <Label
+                    Text="Begins"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="1" />
+                <Label
+                    Text="Full Moon"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="2" />
+                <Label
+                    Text="Length"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="3" />
+            </Grid>
+            <Label
+                Text=" "
+                FontSize="24"
+                Height="48"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center" />
+            <Label
+                Text="Holidays"
+                FontSize="24"
+                Height="48"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center" />
+            <Grid
+                x:Name="table2"
+                ColumnDefinitions="* ,Auto, Auto"
+                ColumnSpacing="12"
+                RowSpacing="12"
+                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                <Label
+                    Text="Name"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="0" />
+                <Label
+                    Text="Date"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="1" />
+                <Label
+                    Text="AS Date"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"
+                    Grid.Row="0"
+                    Grid.Column="2" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

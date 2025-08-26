@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    
+    xmlns:local="clr-namespace:ASCal"
+    
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ASCal.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Label
+                x:Name="todayLbl"
+                Text="Today is the "
+                FontSize="24"
+                HorizontalTextAlignment="Center" />
+            <Label
+                Text=" "
+                FontSize="24"
+                HorizontalTextAlignment="Center" />
+            <Label
+                x:Name="nextMonthLbl"
+                Text="The next month is "
+                FontSize="20"
+                HorizontalTextAlignment="Center" />
+            <Label
+                Text=" "
+                FontSize="24"
+                HorizontalTextAlignment="Center" />
+            <Label
+                x:Name="nextHolidayLbl"
+                Text="The next holiday is "
+                FontSize="20"
+                HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
